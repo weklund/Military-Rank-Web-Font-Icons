@@ -1,0 +1,457 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "military-rank-icons";
+  src:url("fonts/military-rank-icons.eot");
+  src:url("fonts/military-rank-icons.eot?#iefix") format("embedded-opentype"),
+    url("fonts/military-rank-icons.woff") format("woff"),
+    url("fonts/military-rank-icons.ttf") format("truetype"),
+    url("fonts/military-rank-icons.svg#military-rank-icons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-rank]:before {
+  font-family: "military-rank-icons" !important;
+  content: attr(data-rank);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="rank-"]:before,
+[class*=" rank-"]:before {
+  font-family: "military-rank-icons" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+/* makes the font 33% larger relative to the icon container */
+.rank-lg {
+  font-size: 1.3333333333333333em;
+  line-height: 0.75em;
+  vertical-align: -15%;
+}
+.rank-2x {
+  font-size: 2em;
+}
+.rank-3x {
+  font-size: 3em;
+}
+.rank-4x {
+  font-size: 4em;
+}
+.rank-5x {
+  font-size: 5em;
+}
+.rank-6x {
+  font-size: 6em;
+}
+.rank-7x {
+  font-size: 7em;
+}
+.rank-8x {
+  font-size: 8em;
+}
+
+.rank-9x {
+  font-size: 9em;
+}
+
+.rank-10x {
+  font-size: 10em;
+}
+
+.rank-11x {
+  font-size:11em;
+}
+.rank-12x {
+  font-size:12em;
+}
+.rank-13x {
+  font-size:13em;
+}
+.rank-14x {
+  font-size:14em;
+}
+
+
+.rank-fw {
+  width: 1.2857142857142858em;
+  text-align: center;
+}
+.rank-ul {
+  padding-left: 0;
+  margin-left: 2.142857142857143em;
+  list-style-type: none;
+}
+.rank-ul > li {
+  position: relative;
+}
+.rank-li {
+  position: absolute;
+  left: -2.142857142857143em;
+  width: 2.142857142857143em;
+  top: 0.14285714285714285em;
+  text-align: center;
+}
+.rank-li.rank-lg {
+  left: -1.8571428571428572em;
+}
+.rank-border {
+  padding: .2em .25em .15em;
+  border: solid 0.08em #eeeeee;
+  border-radius: .1em;
+}
+.pull-right {
+  float: right;
+}
+.pull-left {
+  float: left;
+}
+.rank-pull-left {
+  margin-right: .3em;
+}
+.rank-pull-right {
+  margin-left: .3em;
+}
+.rank-spin {
+  -webkit-animation: spin 2s infinite linear;
+  -moz-animation: spin 2s infinite linear;
+  -o-animation: spin 2s infinite linear;
+  animation: spin 2s infinite linear;
+}
+@-moz-keyframes spin {
+  0% {
+    -moz-transform: rotate(0deg);
+  }
+  100% {
+    -moz-transform: rotate(359deg);
+  }
+}
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+  }
+}
+@-o-keyframes spin {
+  0% {
+    -o-transform: rotate(0deg);
+  }
+  100% {
+    -o-transform: rotate(359deg);
+  }
+}
+@-ms-keyframes spin {
+  0% {
+    -ms-transform: rotate(0deg);
+  }
+  100% {
+    -ms-transform: rotate(359deg);
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(359deg);
+  }
+}
+.rank-rotate-90 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.rank-rotate-180 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.rank-rotate-270 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+.rank-flip-horizontal {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1);
+  -webkit-transform: scale(-1, 1);
+  -moz-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
+  -o-transform: scale(-1, 1);
+  transform: scale(-1, 1);
+}
+.rank-flip-vertical {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1);
+  -webkit-transform: scale(1, -1);
+  -moz-transform: scale(1, -1);
+  -ms-transform: scale(1, -1);
+  -o-transform: scale(1, -1);
+  transform: scale(1, -1);
+}
+.rank-stack {
+  position: relative;
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  line-height: 2em;
+  vertical-align: middle;
+}
+.rank-stack-1x,
+.rank-stack-2x {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+.rank-stack-1x {
+  line-height: inherit;
+}
+.rank-stack-2x {
+  font-size: 2em;
+}
+.rank-inverse {
+  color: #ffffff;
+}
+
+.rank-03-e2:before {
+  content: "a";
+}
+.rank-03-e3:before {
+  content: "b";
+}
+.rank-03-e4-1:before {
+  content: "c";
+}
+.rank-03-e4-2:before {
+  content: "d";
+}
+.rank-03-e5:before {
+  content: "e";
+}
+.rank-03-e6:before {
+  content: "f";
+}
+.rank-03-e7:before {
+  content: "g";
+}
+.rank-03-e8-1:before {
+  content: "h";
+}
+.rank-03-e8-2:before {
+  content: "i";
+}
+.rank-03-e9-1:before {
+  content: "j";
+}
+.rank-03-e9-2:before {
+  content: "k";
+}
+.rank-03-e9-3:before {
+  content: "l";
+}
+.rank-04-e2:before {
+  content: "m";
+}
+.rank-04-e3:before {
+  content: "n";
+}
+.rank-04-e4:before {
+  content: "o";
+}
+.rank-04-e5:before {
+  content: "p";
+}
+.rank-04-e6:before {
+  content: "q";
+}
+.rank-04-e7:before {
+  content: "r";
+}
+.rank-04-e8:before {
+  content: "s";
+}
+.rank-04-e9-1:before {
+  content: "t";
+}
+.rank-04-e9-2:before {
+  content: "u";
+}
+.rank-04-e9-3:before {
+  content: "v";
+}
+.rank-04-e9-4:before {
+  content: "w";
+}
+.rank-02-02-e2:before {
+  content: "x";
+}
+.rank-02-02-e3:before {
+  content: "y";
+}
+.rank-02-02-e4:before {
+  content: "z";
+}
+.rank-02-02-e5:before {
+  content: "A";
+}
+.rank-02-02-e6:before {
+  content: "B";
+}
+.rank-02-02-e7:before {
+  content: "C";
+}
+.rank-02-02-e9:before {
+  content: "D";
+}
+.rank-02-02-e9-1:before {
+  content: "E";
+}
+.rank-02-00-e2:before {
+  content: "F";
+}
+.rank-02-00-e3:before {
+  content: "G";
+}
+.rank-02-00-e4:before {
+  content: "H";
+}
+.rank-02-00-e5:before {
+  content: "I";
+}
+.rank-02-00-e6:before {
+  content: "J";
+}
+.rank-02-00-e7:before {
+  content: "K";
+}
+.rank-02-00-e8:before {
+  content: "L";
+}
+.rank-02-00-e9-01:before {
+  content: "M";
+}
+.rank-02-00-e9-02:before {
+  content: "N";
+}
+.rank-02-01-e2:before {
+  content: "O";
+}
+.rank-02-01-e3:before {
+  content: "P";
+}
+.rank-02-01-e4:before {
+  content: "Q";
+}
+.rank-02-01-e5:before {
+  content: "R";
+}
+.rank-02-01-e6:before {
+  content: "S";
+}
+.rank-02-01-e7:before {
+  content: "T";
+}
+.rank-02-01-e8:before {
+  content: "U";
+}
+.rank-02-01-e9:before {
+  content: "V";
+}
+.rank-01-cw2:before {
+  content: "W";
+}
+.rank-01-cw5:before {
+  content: "X";
+}
+.rank-01-o1:before {
+  content: "Y";
+}
+.rank-01-o2:before {
+  content: "Z";
+}
+.rank-01-o3:before {
+  content: "0";
+}
+.rank-01-o4:before {
+  content: "1";
+}
+.rank-01-o5:before {
+  content: "2";
+}
+.rank-01-o6:before {
+  content: "3";
+}
+.rank-01-o7:before {
+  content: "4";
+}
+.rank-01-o8:before {
+  content: "5";
+}
+.rank-01-o9:before {
+  content: "6";
+}
+.rank-01-o10:before {
+  content: "7";
+}
+.rank-01-w1:before {
+  content: "8";
+}
+.rank-01-e2:before {
+  content: "9";
+}
+.rank-01-e3:before {
+  content: "!";
+}
+.rank-01-e4:before {
+  content: "\"";
+}
+.rank-01-e5:before {
+  content: "#";
+}
+.rank-01-e6:before {
+  content: "$";
+}
+.rank-01-e7:before {
+  content: "%";
+}
+.rank-01-e8-1:before {
+  content: "&";
+}
+.rank-01-e8-2:before {
+  content: "'";
+}
+.rank-01-e9-1:before {
+  content: "(";
+}
+.rank-01-e9-2:before {
+  content: ")";
+}
+.rank-01-e9-3:before {
+  content: "*";
+}
