@@ -113,7 +113,7 @@
 }
 .rank-border {
   padding: .2em .25em .15em;
-  border: solid 0.08em #eeeeee;
+  border: solid 0.08em #222222;
   border-radius: .1em;
 }
 .pull-right {
@@ -237,6 +237,11 @@
 }
 .rank-inverse {
   color: #ffffff;
+}
+
+.rank-inverse-warrant{
+  background-color:#222222;
+  color:#FFF;
 }
 
 .rank-03-e2:before {
