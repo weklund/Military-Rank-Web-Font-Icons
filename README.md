@@ -34,6 +34,9 @@ Font Icons That Include All US Armed Forces Ranks
 ### Reference guide for all Paygrade codes:
 [Military Ranks List](http://www.militaryfactory.com/ranks/)
 
+**Please let me know if you have any feedback or I've made an error for a specfic rank.**
+**Thanks!**
+
 ## CSS classes of current icons
 
 
@@ -60,9 +63,9 @@ Icon | Rank | CSS Mapping
 Icon | Rank | CSS Mapping
 ------------ | ------------- | -------------
 ![Warrant Officer](http://puu.sh/hw0aO/aff66baa15.png) | Warrant Officer (W1) | .rank-01-w1
-![Chief Warrant Officer 2](http://puu.sh/hvWWQ/36978b4fdf.png) | Chief Warrant Officer 2 (CW2) | .rank-01-cw2
+![Chief Warrant Officer 2](http://puu.sh/hHFeB/8a25a48186.png) | Chief Warrant Officer 2 (CW2) | .rank-01-cw2
 ![Chief Warrant Officer 3](http://puu.sh/hw0aO/aff66baa15.png) | Chief Warrant Officer 3 (CW3) | .rank-01-w1 rank-inverse-warrant
-![Chief Warrant Officer 4](http://puu.sh/hvWWQ/36978b4fdf.png) | Chief Warrant Officer 4 (CW4) | .rank-01-cw2 rank-inverse-warrant
+![Chief Warrant Officer 4](http://puu.sh/hHFeB/8a25a48186.png) | Chief Warrant Officer 4 (CW4) | .rank-01-cw2 rank-inverse-warrant
 ![Chief Warrant Officer 5](http://puu.sh/hHAg6/1d127b0625.png) | Chief Warrant Officer 5 (CW5) | .rank-01-cw5
 
 > Note:
