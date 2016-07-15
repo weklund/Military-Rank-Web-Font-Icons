@@ -182,3 +182,7 @@ Icon | Rank | CSS Mapping
 - .rank-inverse
 - .rank-inverse-warrant
 
+
+# License 
+
+MIT License
